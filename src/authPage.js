@@ -11,7 +11,7 @@ const AuthPage = (props) => {
   const onLogin = (e) => {
     e.preventDefault();
     axios
-      .post("https://cc3a-2409-4064-491-4e17-d4df-a2f7-1578-9e6d.ngrok-free.app/login", { username, secret })
+      .post("https://ce03-2409-4061-2ecc-8075-b598-6489-def2-356b.ngrok-free.app/login", { username, secret })
       .then((r) => props.onAuth({ ...r.data, secret })) // NOTE: over-ride secret
       .catch((e) => console.log(JSON.stringify(e.response.data)));
   };
@@ -19,7 +19,7 @@ const AuthPage = (props) => {
   const onSignup = (e) => {
     e.preventDefault();
     axios
-      .post("https://cc3a-2409-4064-491-4e17-d4df-a2f7-1578-9e6d.ngrok-free.app/signup", {
+      .post("https://ce03-2409-4061-2ecc-8075-b598-6489-def2-356b.ngrok-free.app/signup", {
         username,
         secret,
         email,
